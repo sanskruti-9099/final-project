@@ -1,0 +1,25 @@
+# Core
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-dotenv==1.1.0
+
+# Database
+sqlalchemy==2.0.41
+pymysql==1.1.1
+cryptography==45.0.3
+alembic==1.16.2
+
+# Validation / Serialization
+pydantic==2.11.4
+pydantic-settings==2.9.1
+
+# AI
+groq==0.15.0
+
+# Logging
+structlog==25.4.0
+
+# Authentication
+bcrypt==4.1.2
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9

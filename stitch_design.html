@@ -1,0 +1,117 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@600;700&amp;family=Inter:wght@400;500&amp;family=Geist:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "surface-variant": "#2d363e", "primary-container": "#548dff", "on-tertiary": "#2d3137", "inverse-primary": "#0058c9", "tertiary": "#c3c6cf", "on-secondary": "#283044", "on-surface": "#dae3ee", "background": "#0b141c", "tertiary-fixed": "#dfe2eb", "surface-container": "#182028", "secondary-fixed-dim": "#bec6df", "on-tertiary-fixed": "#181c22", "on-primary-fixed": "#001944", "on-secondary-container": "#b0b8d1", "surface-container-high": "#222b33", "on-secondary-fixed": "#131b2e", "on-primary-fixed-variant": "#00429a", "outline": "#8c909f", "inverse-on-surface": "#29313a", "outline-variant": "#424654", "secondary": "#bec6df", "surface-container-highest": "#2d363e", "on-secondary-fixed-variant": "#3f465b", "on-tertiary-fixed-variant": "#43474e", "on-tertiary-container": "#262a30", "primary": "#b0c6ff", "on-error": "#690005", "surface-container-lowest": "#060f16", "primary-fixed-dim": "#b0c6ff", "on-surface-variant": "#c2c6d6", "error": "#ffb4ab", "primary-fixed": "#d9e2ff", "inverse-surface": "#dae3ee", "secondary-fixed": "#dae2fc", "surface-dim": "#0b141c", "surface-tint": "#b0c6ff", "on-primary": "#002d6e", "on-error-container": "#ffdad6", "secondary-container": "#41495e", "on-background": "#dae3ee", "error-container": "#93000a", "surface-bright": "#313a43", "tertiary-fixed-dim": "#c3c6cf", "surface-container-low": "#141c24", "surface": "#0b141c", "tertiary-container": "#8d9199", "on-primary-container": "#002760" }, "borderRadius": { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, "spacing": { "xs": "8px", "md": "24px", "xl": "48px", "sm": "16px", "sidebar-width": "260px", "base": "4px", "lg": "32px", "gutter": "20px" }, "fontFamily": { "headline-lg": ["Hanken Grotesk"], "body-sm": ["Inter"], "body-lg": ["Inter"], "headline-xl": ["Hanken Grotesk"], "code-sm": ["Geist"], "label-md": ["Geist"], "body-md": ["Inter"], "headline-md": ["Hanken Grotesk"] }, "fontSize": { "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }], "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "code-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500" }], "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }], "headline-md": ["20px", { "lineHeight": "28px", "fontWeight": "600" }] } } } };</script><style>@layer base { body { -webkit-tap-highlight-color: transparent; scroll-behavior: smooth; } .pb-safe { padding-bottom: env(safe-area-inset-bottom); } .pt-safe { padding-top: env(safe-area-inset-top); } } ::-webkit-scrollbar { display: none; }</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface text-on-surface selection:bg-primary-container/30"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 flex items-center justify-between px-md"><div class="flex items-center gap-xs"><div class="w-8 h-8 rounded-lg bg-primary-container flex items-center justify-center"><span class="material-symbols-outlined text-on-primary-container text-[20px]">auto_awesome</span></div><span class="font-headline-lg text-headline-lg text-primary">Quiz</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></header><main class="pt-16 min-h-screen bg-surface"><div class="flex flex-col w-full px-md pb-xl">
+<!-- Interactive Ambient Background Component -->
+<div class="fixed inset-0 pointer-events-none z-0 overflow-hidden">
+<svg class="w-full h-full opacity-20" preserveaspectratio="xMidYMid slice" viewbox="0 0 100 100">
+<defs>
+<radialgradient cx="50%" cy="50%" fx="50%" fy="50%" id="grad1" r="50%">
+<stop offset="0%" style="stop-color:var(--primary);stop-opacity:0.2"></stop>
+<stop offset="100%" style="stop-color:transparent;stop-opacity:0"></stop>
+</radialgradient>
+</defs>
+<circle cx="20" cy="30" fill="url(#grad1)" r="30">
+<animate attributename="cx" dur="20s" repeatcount="indefinite" values="20;80;20"></animate>
+<animate attributename="cy" dur="25s" repeatcount="indefinite" values="30;70;30"></animate>
+</circle>
+<circle cx="80" cy="80" fill="url(#grad1)" r="25">
+<animate attributename="cx" dur="18s" repeatcount="indefinite" values="80;10;80"></animate>
+<animate attributename="cy" dur="22s" repeatcount="indefinite" values="80;20;80"></animate>
+</circle>
+</svg>
+</div>
+<!-- Content Container: Centered Vertically -->
+<div class="relative z-10 flex flex-col items-center justify-center min-h-[calc(100vh-128px)] space-y-lg">
+<!-- Branding/Icon Section -->
+<div class="flex flex-col items-center gap-sm animate-in fade-in slide-in-from-bottom-4 duration-700">
+<div class="w-20 h-20 rounded-3xl bg-surface-container-high shadow-xl flex items-center justify-center relative overflow-hidden group">
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-primary/20 transition-colors"></div>
+<span class="material-symbols-outlined text-[40px] text-primary transition-transform group-hover:scale-110 duration-500" style="font-variation-settings: 'FILL' 1;">
+          psychology
+        </span>
+</div>
+<div class="text-center space-y-xs max-w-[280px]">
+<h2 class="font-headline-xl text-headline-xl text-on-surface">Quiz Generator</h2>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+          Enter any topic and AI will instantly generate a 5-question multiple-choice quiz.
+        </p>
+</div>
+</div>
+<!-- Interactive Form Section -->
+<div class="w-full max-w-md space-y-md animate-in fade-in slide-in-from-bottom-8 duration-1000 delay-150">
+<div class="relative group">
+<label class="absolute -top-3 left-4 px-2 bg-surface text-label-md font-label-md text-primary z-10" for="quiz-topic">Topic</label>
+<div class="relative flex items-center">
+<span class="absolute left-4 material-symbols-outlined text-outline">search</span>
+<input class="w-full h-16 pl-12 pr-4 bg-surface-container-low text-on-surface font-body-lg rounded-2xl ring-1 ring-outline-variant focus:ring-2 focus:ring-primary focus:bg-surface-container transition-all outline-none placeholder:text-outline/50" id="quiz-topic" placeholder="e.g., Photosynthesis, Python Basics..." type="text"/>
+</div>
+</div>
+<button class="group relative w-full h-16 bg-primary text-on-primary font-headline-md rounded-2xl shadow-lg shadow-primary/20 flex items-center justify-center gap-xs overflow-hidden active:scale-[0.98] transition-transform" id="start-btn">
+<div class="absolute inset-0 bg-white/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<span class="material-symbols-outlined transition-transform group-hover:translate-x-1">play_arrow</span>
+<span>Start Quiz</span>
+</button>
+<!-- Suggested Chips -->
+<div class="flex flex-wrap justify-center gap-xs pt-base">
+<button class="px-sm py-xs rounded-full bg-surface-container text-label-md font-label-md text-on-surface-variant ring-1 ring-outline-variant active:bg-primary-container active:text-on-primary-container transition-colors" onclick="document.getElementById('quiz-topic').value = 'World War II'">World War II</button>
+<button class="px-sm py-xs rounded-full bg-surface-container text-label-md font-label-md text-on-surface-variant ring-1 ring-outline-variant active:bg-primary-container active:text-on-primary-container transition-colors" onclick="document.getElementById('quiz-topic').value = 'Human Biology'">Human Biology</button>
+<button class="px-sm py-xs rounded-full bg-surface-container text-label-md font-label-md text-on-surface-variant ring-1 ring-outline-variant active:bg-primary-container active:text-on-primary-container transition-colors" onclick="document.getElementById('quiz-topic').value = 'Space Exploration'">Space Exploration</button>
+</div>
+</div>
+<!-- Fun Stats/Social Proof (Moment of Delight) -->
+<div class="flex items-center gap-md pt-md opacity-60 animate-in fade-in duration-1000 delay-500">
+<div class="flex -space-x-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest ring-2 ring-surface flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Avatar of a student with a friendly expression, soft lighting, 3D clay style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjiYZC-vR87N3msVUP58PZnqk-xjgGWlA6h0K-rGhT_mlji2fH3N0ZDFXFL1gD2ftUkA1GyCwWpXgKPMraL3a_iFsuUQRuqHbw3mpLpoVR_zCTvO35yqQ8FsFyW9gnoIWabRONDxOnfCLociuGhwZ61a9ORkMEKfmTVFYmBXkef9kX43WVXG6T6Z7N0s7rFzivqEuLqbB9gO-hg35szmLBY99y-lBGct_1CqgEs9LaqQiwgQfo1nKPXA"/>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest ring-2 ring-surface flex items-center justify-center overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Avatar of a young professional in glasses, minimalist 3D style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCDDPOdR3AmUVgeSXM18IwydEnhs8zyXyXix2rCH_GEcS0DOItz1c1KSrMZnB5R8lBmbosAYygFqJSr9BY-42Ckr31SlWwfbj-qE-9uqdkr9dnDCR-vh5Fs4zTfRg-9ZRw7rx_WjHhGgxorEdeKoULqFSxs2Q6tAnV4oon6tm0dqe02DnDyJHzzJFHyPLCZ8v59SrResnqQGtMzckuXw-G_7TDfpa0hAkm9pn7EOPDS19y5MdHN4Q1Omg"/>
+</div>
+<div class="w-8 h-8 rounded-full bg-surface-container-highest ring-2 ring-surface flex items-center justify-center overflow-hidden">
+<div class="w-full h-full bg-primary-container flex items-center justify-center text-[10px] font-bold text-on-primary-container">12k</div>
+</div>
+</div>
+<p class="font-label-md text-label-md text-on-surface-variant">Quizzes taken today</p>
+</div>
+</div>
+<script>
+    document.getElementById('start-btn').addEventListener('click', function() {
+      const input = document.getElementById('quiz-topic');
+      if (!input.value.trim()) {
+        input.classList.add('animate-shake');
+        setTimeout(() => input.classList.remove('animate-shake'), 500);
+        return;
+      }
+      
+      this.innerHTML = `
+        <span class="material-symbols-outlined animate-spin">progress_activity</span>
+        <span>Generating...</span>
+      `;
+      this.classList.add('pointer-events-none', 'opacity-80');
+      
+      // Simulate transition to quiz
+      setTimeout(() => {
+        window.location.hash = '#quiz-loading';
+      }, 1200);
+    });
+
+    // Custom shake animation via style injection for interaction feedback
+    if (!document.getElementById('shake-style')) {
+      const style = document.createElement('style');
+      style.id = 'shake-style';
+      style.innerHTML = `
+        @keyframes shake {
+          0%, 100% { transform: translateX(0); }
+          25% { transform: translateX(-8px); }
+          75% { transform: translateX(8px); }
+        }
+        .animate-shake { animation: shake 0.2s ease-in-out 0s 2; }
+      `;
+      document.head.appendChild(style);
+    }
+  </script>
+</div></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/80 backdrop-blur-xl shadow-[0_-1px_8px_rgba(0,0,0,0.04)]" data-active-classes="text-primary"><div class="h-16 flex items-center justify-around px-xs"><a class="flex flex-col items-center gap-1 text-on-surface-variant transition-colors min-w-[64px]" data-path="home" href="#"><span class="material-symbols-outlined">home</span><span class="font-label-md text-label-md">Home</span></a><a class="flex flex-col items-center gap-1 text-on-surface-variant transition-colors min-w-[64px]" data-path="ai-chat" href="#"><span class="material-symbols-outlined">chat_bubble</span><span class="font-label-md text-label-md">AI Chat</span></a><a class="flex flex-col items-center gap-1 text-on-surface-variant transition-colors min-w-[64px]" data-path="summary" href="#"><span class="material-symbols-outlined">auto_stories</span><span class="font-label-md text-label-md">Summary</span></a><a aria-current="page" class="flex flex-col items-center gap-1 transition-colors min-w-[64px] text-primary" data-path="quiz" href="#"><span class="material-symbols-outlined">quiz</span><span class="font-label-md text-label-md">Quiz</span></a></div></nav></body></html>
