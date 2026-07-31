@@ -107,7 +107,7 @@ export default function SettingsPage() {
   const getProfileImageUrl = () => {
     if (profile.profile_image) {
       // Assuming backend is running on 8000 and proxy is set up or direct URL
-      return `http://localhost:8000/uploads/${profile.profile_image}`;
+      return `https://final-project-pkau.onrender.com/uploads/${profile.profile_image}`;
     }
     return null;
   };

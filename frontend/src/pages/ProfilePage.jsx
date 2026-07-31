@@ -72,7 +72,7 @@ const ProfilePage = () => {
             <div className="relative group">
               <div className="w-32 h-32 rounded-full overflow-hidden bg-[#222b33] border-4 border-[#2d363e] flex items-center justify-center">
                 {user?.profile_image ? (
-                  <img src={`http://localhost:8000${user.profile_image}`} alt="Profile" className="w-full h-full object-cover" />
+                  <img src={`https://final-project-pkau.onrender.com${user.profile_image}`} alt="Profile" className="w-full h-full object-cover" />
                 ) : (
                   <UserIcon className="w-12 h-12 text-[#b0b8d1]" />
                 )}

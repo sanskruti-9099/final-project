@@ -2,7 +2,7 @@ import urllib.request
 import urllib.error
 
 try:
-    req = urllib.request.Request("http://localhost:8000/api/v1/dashboard")
+    req = urllib.request.Request("https://final-project-pkau.onrender.com/api/v1/dashboard")
     with urllib.request.urlopen(req) as response:
         print("Success:", response.read().decode('utf-8'))
 except urllib.error.HTTPError as e:

@@ -189,7 +189,7 @@ export default function Sidebar({ collapsed, onToggle, mobileOpen, onCloseMobile
         <div className={`flex items-center gap-3 px-3 py-2 rounded-xl ${isDark ? 'bg-surface-800/50' : 'bg-surface-50'} transition-all`}>
           <div className="w-9 h-9 rounded-full shrink-0 bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white text-sm font-bold shadow-sm overflow-hidden">
              {user?.profile_image ? (
-               <img src={`http://localhost:8000${user.profile_image}`} alt="Profile" className="w-full h-full object-cover" />
+               <img src={`https://final-project-pkau.onrender.com${user.profile_image}`} alt="Profile" className="w-full h-full object-cover" />
              ) : (
                <span>{user?.full_name ? user.full_name.charAt(0).toUpperCase() : 'U'}</span>
              )}

@@ -3,7 +3,7 @@ import axios from 'axios'
 /**
  * Pre-configured Axios instance pointing at the backend API.
  *
- * In development Vite proxies /api to http://localhost:8000,
+ * In development Vite proxies /api to https://final-project-pkau.onrender.com,
  * so we use a relative baseURL.
  */
 const api = axios.create({

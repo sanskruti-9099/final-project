@@ -123,7 +123,7 @@ export default function Navbar({ onMenuToggle }) {
             className="w-9 h-9 rounded-full bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white text-sm font-bold shadow-md shadow-primary-500/25 cursor-pointer hover:ring-2 hover:ring-primary-400 hover:ring-offset-2 hover:ring-offset-surface-50 dark:hover:ring-offset-surface-900 transition-all overflow-hidden"
           >
             {user?.profile_image ? (
-              <img src={`http://localhost:8000${user.profile_image}`} alt={user?.full_name} className="w-full h-full object-cover" />
+              <img src={`https://final-project-pkau.onrender.com${user.profile_image}`} alt={user?.full_name} className="w-full h-full object-cover" />
             ) : (
               <span>{user?.full_name ? user.full_name.charAt(0).toUpperCase() : 'U'}</span>
             )}
