@@ -23,3 +23,5 @@ structlog==25.4.0
 bcrypt==4.1.2
 python-jose[cryptography]==3.3.0
 python-multipart==0.0.9
+pydantic[email]
+email_validator
