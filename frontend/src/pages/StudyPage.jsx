@@ -37,7 +37,7 @@ export default function StudyPage() {
 
   const handleDownload = () => {
     if (summary && summary.id) {
-      window.open(`https://final-project-pkau.onrender.com/api/v1/summary/${summary.id}/download`, '_blank');
+      window.open(`${import.meta.env.VITE_API_URL || ''}/api/v1/summary/${summary.id}/download`, '_blank');
     }
   };
   

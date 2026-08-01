@@ -3,11 +3,14 @@ import axios from 'axios'
 /**
  * Pre-configured Axios instance pointing at the backend API.
  *
- * In development Vite proxies /api to https://final-project-pkau.onrender.com,
- * so we use a relative baseURL.
+ * In development Vite proxies /api to http://localhost:8000,
+ * so VITE_API_URL can be left empty (relative baseURL).
+ * In production set VITE_API_URL to the deployed backend origin.
  */
+const API_BASE_URL = import.meta.env.VITE_API_URL || '';
+
 const api = axios.create({
-  baseURL: '/api/v1',
+  baseURL: `${API_BASE_URL}/api/v1`,
   timeout: 120000, // 120 seconds
   headers: {
     'Content-Type': 'application/json',
