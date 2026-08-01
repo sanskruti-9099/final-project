@@ -21,7 +21,7 @@ export const AuthProvider = ({ children }) => {
 
   const fetchUser = async () => {
     try {
-      const response = await api.get('/me');
+      const response = await api.get('/auth/me');
       setUser(response.data);
     } catch (error) {
       console.error('Error fetching user', error);
@@ -32,14 +32,14 @@ export const AuthProvider = ({ children }) => {
   };
 
   const login = async (email, password) => {
-    const response = await api.post('/login', { email, password });
+    const response = await api.post('/auth/login', { email, password });
     setToken(response.data.access_token);
     setUser(response.data.user);
     return response.data;
   };
 
   const register = async (userData) => {
-    const response = await api.post('/register', userData);
+    const response = await api.post('/auth/register', userData);
     return response.data;
   };
 
